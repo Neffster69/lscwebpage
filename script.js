@@ -79,3 +79,43 @@ window.addEventListener('load', function () {
         img.style.transition = 'opacity 0.3s ease-in-out';
     });
 });
+// Form submission handler for sponsorship inquiry form
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('sponsorshipForm');
+    
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                orgName: document.getElementById('orgName').value,
+                contactName: document.getElementById('contactName').value,
+                contactPhone: document.getElementById('contactPhone').value,
+                contactEmail: document.getElementById('contactEmail').value,
+                orgType: document.getElementById('orgType').value,
+                location: document.getElementById('location').value,
+                message: document.getElementById('message').value,
+                newsletter: document.getElementById('newsletter').checked
+            };
+            
+            // Log the form data (in a real application, you would send this to a server)
+            console.log('Sponsorship Inquiry Submitted:', formData);
+            
+            // Show success message
+            const successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+            
+            // Reset the form
+            form.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(function () {
+                successMessage.style.display = 'none';
+            }, 5000);
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    }
+});

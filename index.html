@@ -102,6 +102,66 @@
             </div>
         </section>
 
+        <!-- Sponsorship Inquiry Form Section -->
+        <section class="inquiry-section">
+            <h3>Ready to Explore Partnership?</h3>
+            <p class="inquiry-subtitle">Fill out the form below and we'll get back to you shortly</p>
+            <form id="sponsorshipForm" class="sponsorship-form" method="POST" action="#">
+                <div class="form-group">
+                    <label for="orgName">Organization Name *</label>
+                    <input type="text" id="orgName" name="orgName" placeholder="Cemetery or Funeral Home Name" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName">Contact Name *</label>
+                        <input type="text" id="contactName" name="contactName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number *</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" placeholder="(765) 555-1234" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address *</label>
+                        <input type="email" id="contactEmail" name="contactEmail" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orgType">Organization Type *</label>
+                        <select id="orgType" name="orgType" required>
+                            <option value="">-- Select Type --</option>
+                            <option value="cemetery">Cemetery</option>
+                            <option value="funeral-home">Funeral Home</option>
+                            <option value="both">Both</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location/City *</label>
+                    <input type="text" id="location" name="location" placeholder="City and State" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your organization and sponsorship interests..." rows="5"></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Subscribe to our newsletter for partnership updates
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Sponsorship Inquiry</button>
+                <p class="form-note">* Required fields</p>
+            </form>
+            <p class="form-success-message" id="successMessage" style="display:none;">✓ Thank you for your inquiry! We'll be in touch soon.</p>
+        </section>
+
         <!-- Footer Quote -->
         <section class="footer-quote">
             <p>Legacy Stone Care<br>"Honoring Memories, One Stone at a Time."</p>
