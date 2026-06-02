@@ -482,6 +482,43 @@ main {
     border-left: 4px solid #28a745;
 }
 
+/* Discount Section */
+.discount-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f7fbfe 100%);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border-left: 5px solid #27ae60;
+}
+
+.discount-section h3 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+
+.discount-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.discount-box {
+    background: #ffffff;
+    padding: 1.2rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px dashed #ecf0f1;
+}
+
+.discount-text {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
 /* Footer Quote */
 .footer-quote {
     text-align: center;
