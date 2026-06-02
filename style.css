@@ -1,0 +1,400 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Backdrop Section */
+.backdrop-section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.backdrop-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.backdrop-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.backdrop-overlay h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Intro Section */
+.intro {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 5px solid #3498db;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+/* Features Section */
+.features {
+    margin-bottom: 2rem;
+}
+
+.features h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.features li {
+    background: #ffffff;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #27ae60;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.features li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Comparison Section */
+.comparison-section {
+    margin-bottom: 3rem;
+}
+
+.comparison-section h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.image-swiper {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.swiper-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-image {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.swiper-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.swiper-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.swiper-button:hover {
+    background: #2980b9;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.5);
+    transform: translateY(-2px);
+}
+
+.swiper-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(52, 152, 219, 0.3);
+}
+
+.swiper-indicator {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* CTA Section */
+.cta {
+    background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cta p {
+    color: #2c3e50;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+.contact a:hover,
+.contact a:focus {
+    color: #ffffff;
+    background: #3498db;
+    outline: none;
+}
+
+/* Offer Section */
+.offer {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* Footer Quote */
+.footer-quote {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.footer-quote p {
+    color: #2c3e50;
+    line-height: 1.8;
+}
+
+/* Hashtags */
+.hashtags {
+    text-align: center;
+    color: #95a5a6;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ecf0f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .backdrop-section {
+        height: 40vh;
+    }
+
+    .backdrop-overlay {
+        padding: 2rem 1.5rem;
+        max-width: 90%;
+    }
+
+    .backdrop-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .header-title {
+        font-size: 1.2rem;
+    }
+
+    .intro {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .comparison-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .swiper-container {
+        max-height: 300px;
+    }
+
+    .swiper-image {
+        max-height: 300px;
+    }
+
+    .swiper-controls {
+        gap: 0.5rem;
+    }
+
+    .swiper-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .swiper-indicator {
+        display: none;
+    }
+
+    .contact {
+        font-size: 1.1rem;
+    }
+
+    .cta {
+        padding: 1.5rem;
+    }
+
+    main {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .backdrop-section {
+        height: 35vh;
+    }
+
+    .backdrop-overlay {
+        padding: 1.5rem 1rem;
+    }
+
+    .backdrop-logo {
+        width: 70px;
+        margin-bottom: 1rem;
+    }
+
+    .backdrop-overlay h1 {
+        font-size: 1.4rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .features li {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .swiper-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .offer {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .cta {
+        padding: 1rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    .contact {
+        font-size: 1rem;
+    }
+}
