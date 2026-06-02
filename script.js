@@ -4,6 +4,21 @@ const swiperStates = {
     fullSwiper: 'dirty'
 };
 
+// Preload all images on page load to eliminate switching delay
+function preloadImages() {
+    const imagesToPreload = [
+        'images/Close-up-dirty.png',
+        'images/close-up-clean.png',
+        'images/full-dirty.png',
+        'images/full-clean.png'
+    ];
+    
+    imagesToPreload.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+}
+
 // Function to swap between dirty and clean images
 function swipeImage(swiperId, state) {
     const imageElement = document.getElementById(swiperId);
@@ -40,6 +55,9 @@ function swipeImage(swiperId, state) {
 
 // Add touch swipe functionality for mobile devices
 document.addEventListener('DOMContentLoaded', function () {
+    // Preload images first
+    preloadImages();
+    
     const swiperContainers = document.querySelectorAll('.swiper-container');
 
     swiperContainers.forEach(container => {
